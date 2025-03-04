@@ -1,0 +1,571 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand p {
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    color: #000;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #627E5D), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.banner-text {
+    text-align: center;
+    color: #000;
+    padding-top: 120px;
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    padding-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    color: #000;
+}
+
+.banner-text p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #000;
+    border: .5px solid #000;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: #fff;
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #8CE17D;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn a {
+    width: 20px;
+    margin-top: 15px;
+}
+
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 50%;
+}
+
+.features-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #000;
+}
+
+.features-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.feature-text p {
+    padding: 0 20px;
+    text-align: initial;
+    color: #000;
+}
+
+#services {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.service-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.single-service {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 3px #627E5D;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.single-service p {
+    font-size: 14px;
+    color: #000;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.services-content img {
+    width: 40px;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.single-service h1 {
+    font-size: 24px;
+    color: #000;
+}
+
+.single-service:hover {
+    transform: translateY(7px);
+}
+
+#contact {
+    padding: 60px 0 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), #3b4638), url(../images/footer-bg.jpg);
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-title-text h1 {
+    text-align: center;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+.footer-right .footer-left {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #000;
+}
+
+.footer-left h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #000;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    text-align: right;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-row h1 {
+    color: #000;
+    margin: 5px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+    color: #000;
+}
+
+@media screen and (max-width: 770px) {
+    .banner-text h1 {
+        font-size: 44px;
+    }
+
+    .banner-btn a {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .title-text h1 {
+        font-size: 35px;
+    }
+
+    .features {
+        flex-basis: 100%;
+    }
+
+    .features-img {
+        flex-basis: 100%;
+    }
+
+    .features-img img {
+        width: 100%;
+    }
+
+    .single-service {
+        flex-basis: 100%;
+        padding-bottom: 5px;
+    }
+
+    .services-content {
+        flex-basis: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+.banner-btn a {
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #000;
+    border: .5px solid #000;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(145deg, #e6e6e6, #cfcfcf);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #b8b8b8, -4px -4px 8px #ffffff;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 6px 6px 12px #a0a0a0, -6px -6px 12px #ffffff;
+}
+/* Text Animation */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Apply Animation to All Text Elements */
+h1, h2, h3, h4, h5, h6, p, a, label, button {
+    animation: textGlow 2s infinite ease-in-out;
+}
+/* 3D Text Animation */
+@keyframes parikshan3D {
+    0% {
+        transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    25% {
+        transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        transform: perspective(500px) rotateX(-15deg) rotateY(-15deg);
+        text-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+    }
+    75% {
+        transform: perspective(500px) rotateX(10deg) rotateY(-10deg);
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Apply animation only on "Parikshan" */
+.parikshan {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    animation: parikshan3D 3s infinite ease-in-out;
+}
+.predict-btn {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.predict-btn:hover {
+    background: linear-gradient(45deg, #218838, #1e7e34);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.predict-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.predict-btn2 {
+    background: linear-gradient(to right, #00c6ff, #09ee11);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Loading Animation */
+#loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+.spinner {
+	width: 50px;
+	height: 50px;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	border-top-color: #007bff;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Scroll-to-Top Button */
+#scrollTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	background: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+#scrollTop:hover {
+	background: #0056b3;
+}
+
+
+.predict-btn2:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+.form-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #2E8B57;
+    box-shadow: 0px 0px 10px rgba(46, 139, 87, 0.5);
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+.form-control {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.form-control:focus {
+    border: 2px solid #4CAF50;
+    background: #fff;
+    box-shadow: inset 2px 2px 5px #b3b3b3, inset -2px -2px 5px #ffffff;
+    transform: scale(1.05);
+}
+
+.form-control::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.predict-btn3 {
+    background: linear-gradient(to right, #00c6ff, #09ee11);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.predict-btn3:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}

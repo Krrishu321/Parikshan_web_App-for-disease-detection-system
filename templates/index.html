@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parikshan App</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="./static/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap"
+		rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<p>Parikshan</p>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Services
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="/crop-disease">Crop Diseases Detection System</a></li>
+							<li><a class="dropdown-item" href="/fertilizer-recommendation">Fertilizer Recommendation System</a>
+							</li>
+							<li><a class="dropdown-item" href="/crop-recommendation">Crop Recommendation System</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	{% block content %}
+	<section id="banner">
+		<div class="banner-text">
+			<h1>Parikshan</h1>
+			<p style="color: #FFFF99; font-weight: bold; font-style: italic;  
+			text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;">
+	         Use AI-powered technology to enhance farming, increase crop yield, reduce costs and make better decisions. AI helps farmers grow healthier crops and manage their fields more efficiently with smart insights.
+             </p>
+			<div class="banner-btn">
+				<a href="#services">
+					<span><i class="fas fa-info-circle"></i> Find Out</span>
+				</a>
+				
+				<a href="#feature">
+					<span><i class="fas fa-book"></i> Read More</span>
+				</a>
+				
+				
+				<!-- Font Awesome Library Include -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+			</div>
+		</div>
+	</section>
+
+	<section id="feature">
+		<div class="title-text">
+			<p>FEATURES</p>
+			<h1 style="color: #FFD700; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">
+				WHY CHOOSE US
+			</h1>
+		</div>
+		
+		<<div class="feature-box" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3);">>
+			<div class="features">
+				<h1 <h1 style="display: flex; align-items: center; gap: 10px; color: #00FF7F;">
+					<i class="fa fa-bolt"></i>Quick Diagnosis</h1>
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-bolt"></i>
+					</div>
+					<div class="feature-text">
+						<p>Our AI technology helps farmers quickly find and treat crop diseases. It checks plant health in real-time making farming easier and more efficient.</p>
+					</div>
+
+				</div>
+
+                <div class="features">
+					<h1 style="display: flex; align-items: center; gap: 10px; color: #0088cc;">
+						<i class="fa fa-seedling"></i> Increase Yield
+					</h1>
+					<div class="features-desc" style="display: flex; align-items: center; gap: 15px;">
+						<div class="feature-icon">
+							<i class="fa fa-seedling" style="font-size: 24px; color: #0088cc;"></i>
+						</div>
+						<div class="feature-text">
+							<p>
+								Our AI-powered recommendations help farmers optimize water usage, fertilizers, and planting techniques. 
+								This leads to healthier crops, improved productivity, and minimal resource wastage, ensuring sustainable farming.
+							</p>
+						</div>
+					</div>
+				</div>
+                
+				<div class="features">
+					<h1 style="display: flex; align-items: center; gap: 10px; color: #4CAF50;">
+						<i class="fa fa-dollar-sign"></i> Reduce Cost
+					</h1>
+					<div class="features-desc" style="display: flex; align-items: center; gap: 15px;">
+						<div class="feature-icon">
+							<i class="fa fa-dollar-sign" style="font-size: 24px; color: #4CAF50;"></i>
+						</div>
+						<div class="feature-text">
+							<p>
+								Our AI-driven solutions help farmers cut down unnecessary expenses by optimizing resource usage. 
+								By reducing dependency on expensive tools and manual labor, farming becomes more cost-effective and profitable.
+							</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="title-text">
+			<p>SERVICES</p>
+			<h1>WE PROVIDE</h1>
+		</div>
+		<div class="service-box">
+
+			<div class="single-service">
+				<div class="service-content">
+					<img src="./static/images/service-1.jpg">
+				</div>
+				<a href="/crop-recommendation" style="color: #000">
+					<h1>Crop Recommendation System</h1>
+				</a>
+				<p style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px; color: #2c3e50; 
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); transform: perspective(500px) rotateX(10deg);
+          transition: all 0.5s ease-in-out;"onmouseover="this.style.transform='perspective(500px) rotateX(0deg) scale(1.1)'; this.style.color='#16a085';" onmouseout="this.style.transform='perspective(500px) rotateX(10deg) scale(1)'; this.style.color='#2c3e50';"> Our system analyzes <b>soil quality</b>, <i>weather conditions</i>, and <u>climate data</u> to recommend the <span style="color: #e74c3c; font-weight: bold;">best crops</span> for farming. This helps farmers make  <span style="color: #3498db;">informed decisions</span>, improve productivity, and reduce the risk of <span style="text-decoration: underline wavy #f39c12;">crop failure</span>.</p>
+			</div>
+
+			<div class="single-service">
+				<div class="service-content">
+					<img src="./static/images/service-3.jpg">
+
+				</div>
+				<a href="/fertilizer-recommendation" style="color: #000">
+					<h1>Fertilizer Recommendation System</h1>
+				</a>
+				<p style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px; color: #34495e; 
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); transform: perspective(500px) rotateX(10deg);
+          transition: all 0.5s ease-in-out;"onmouseover="this.style.transform='perspective(500px) rotateX(0deg) scale(1.1)'; this.style.color='#16a085';"onmouseout="this.style.transform='perspective(500px) rotateX(10deg) scale(1)'; this.style.color='#34495e';">Our AI-driven system carefully analyzes soil composition</b>,<i>crop type </i>and <u> nutrient levels </u>to recommend the most <span style="color: #e74c3c; font-weight: bold;">suitable fertilizers</span> for your farm.It helps farmers <span style="color: #3498db;">improve soil health</span>, boost crop growth, and reduce <span style="text-decoration: underline wavy #f39c12;"> unnecessary chemical usage.</span></p>
+			</div>
+
+			<div class="single-service">
+				<div class="service-content">
+					<img src="./static/images/service-2.jpg">
+
+				</div>
+				<a href="/crop-disease" style="color: #000">
+					<h1>Crop Disease Detection System</h1>
+				</a>
+				<p style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px; color: #2c3e50; 
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); transform: perspective(500px) rotateX(10deg);
+          transition: all 0.5s ease-in-out;"onmouseover="this.style.transform='perspective(500px) rotateX(0deg) scale(1.1)'; this.style.color='#c0392b';"onmouseout="this.style.transform='perspective(500px) rotateX(10deg) scale(1)'; this.style.color='#2c3e50';">Our AI-powered system <b>analyzes crop images</b> to detect <i>early signs of diseases</i>.It identifies <span style="color: #e67e22;">infected plants</span> and other health issues,helping farmers <u>take quick action</u> to protect their crops.This ensures <b style="color: #27ae60;">higher yield</b> and <span style="color: #3498db;">minimal losses</span>.</p>
+			</div>
+
+		</div>
+	</section>
+
+    <section id="contact" style="padding: 30px; background: #f8f9fa; text-align: center;">
+		<h1 style="color: #333; font-size: 28px; font-weight: bold; margin-bottom: 20px;"> CONTACT ME </h1>
+	
+		<div class="footer-row" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+			<!-- First Person -->
+			<div class="footer-box" style="background: #fff; padding: 24px; border-radius: 15px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); width: 32%; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+				 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='10px 10px 20px rgba(0, 0, 0, 0.3)';"
+				 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';">
+				<h2 style="color: #007bff; font-size: 22px; margin-bottom: 10px;">Parikshan</h2>
+				<p><strong> Email: </strong> <a href="mailto:singh9621064543@gmail.com" style="color: #fff; background: #ff6b81; padding: 6px 12px; border-radius: 5px; text-decoration: none;">Krishna Singh </a></p>
+				<p><strong>Phone:</strong> <a href="tel:+919621064543" style="color: #007bff; text-decoration: none; font-weight: bold;">+91 9621064543</a></p>
+				<p><strong>GitHub:</strong> <a href="https://github.com/Krrishu321" target="_blank" style="color: #333; font-weight: bold; text-decoration: none;">Krishna's GitHub</a></p>
+			</div>
+	
+			<!-- Second Person -->
+			<div class="footer-box" style="background: #fff; padding: 25px; border-radius: 15px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); width: 32%; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+				 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='10px 10px 20px rgba(0, 0, 0, 0.3)';"
+				 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';">
+				<h2 style="color: #17a2b8; font-size: 22px; margin-bottom: 10px;">Parikshan</h2>
+				<p><strong>Email:</strong> <a href="mailto:vpriyanshu981@gmail.com" style="color: #fff; background: #ff6b81; padding: 6px 12px; border-radius: 5px; text-decoration: none;">Priyanshu Verma</a></p>
+				<p><strong>Phone:</strong> <a href="tel:+919794722152" style="color: #007bff; text-decoration: none; font-weight: bold;">+91 9794722152</a></p>
+				<p><strong>GitHub:</strong> <a href="https://github.com/PriyanshuV99" target="_blank" style="color: #333; font-weight: bold; text-decoration: none;">Priyanshu's GitHub</a></p>
+			</div>
+	
+			<!-- Third Person -->
+			<div class="footer-box" style="background: #fff; padding: 25px; border-radius: 15px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); width: 32%; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+				 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='10px 10px 20px rgba(0, 0, 0, 0.3)';"
+				 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';">
+				<h2 style="color: #28a745; font-size: 22px; margin-bottom: 10px;">Parikshan</h2>
+				<p><strong>Email:</strong> <a href="mailto:umeshkumar203393@gmail.com" style="color: #fff; background: #ff6b81; padding: 6px 12px; border-radius: 5px; text-decoration: none;">Umesh Kumar </a></p>
+				<p><strong>Phone:</strong> <a href="tel:+919756587011" style="color: #007bff; text-decoration: none; font-weight: bold;">+91 9756587011</a></p>
+				<p><strong>GitHub:</strong> <a href="https://github.com/Umesh3050" target="_blank" style="color: #333; font-weight: bold; text-decoration: none;">Umesh's GitHub</a></p>
+			</div>
+		</div>
+	</section>
+	
+
+	{% endblock %}
+
+	<script type="text/javascript" src="./static/js/my.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+		integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+		integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

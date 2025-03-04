@@ -1,0 +1,86 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container pt-5">
+  <h1 class="text-center" style="color: #32de14d7;"> Crop Recommendation System</h1>
+  <p class="text-center pt-3"> "Not sure which crop to grow? Just enter your soil and weather details and our smart AI will suggest the best crop for your farm Make informed decisions for a better harvest.</p>
+</div>
+<br>
+<br>
+<div class="container">
+
+
+  <div class="col-md-4 col-md-offset-4" style="float: right; margin-top: 2%; margin-right: 10%;margin-bottom: 2%;">
+    <img src="./static/images/upload-img.jpg" width="700" height="600">
+  </div>
+
+  <form action="/crop-recommendation" method="POST" style="margin-top: 5%">
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="N"> Amount of Azote :</label>
+      <input class="form-control" type="number" min="0" required="required" name="N" ,
+        placeholder=" Enter Amount of Azote">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="P"> Amount of Phosphorous :</label>
+      <input class="form-control" type="number" min="0" id="P" name="P" required="required"
+        placeholder=" Enter Amount of Phosphore">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="K"> Amount of Potassium :</label>
+      <input class="form-control" type="number" min="0" id="K" name="K" required="required"
+        placeholder=" Enter Amount of Potassium">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="temperature"> Soil Temperature :</label>
+      <input class="form-control" type="number" min="0" step="any" id="temperature" name="temperature"
+        required="required" placeholder="Enter Soil Temperature">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="humidity"> Soil Humidity :</label>
+      <input class="form-control" type="number" min="0" step="any" id="humidity" name="humidity" required="required"
+        placeholder=" Enter Soil Humidity Level">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="phosphore"> Soil Ph :</label>
+      <input class="form-control" type="number" min="0" step="any" id="phosphore" name="phosphore" required="required"
+        placeholder=" Enter Soil PH ">
+
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+
+      <label for="rainfall"> Amount of RainFall :</label>
+      <input class="form-control" type="number" min="0" step="any" id="rainfall" name="rainfall" required="required"
+        placeholder=" Enter amout of Rain Recieved">
+
+    </div>
+    <br>
+
+
+    <div class="text-center" style="padding-top: 1%">
+      <button type="submit" class="predict-btn2" value="submit"> AI Crop Suggestion</button>
+    </div>
+    <br>
+    <br>
+
+  </form>
+
+
+
+</div>
+
+
+<br>
+<br>
+
+{% endblock %}
